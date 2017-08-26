@@ -33,18 +33,6 @@
       <div class="detail-wrapper clearfix">
         <div class="detail-main">
           <h1 class="name">{{seller.name}}</h1>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
-          <p>{{seller.bulletin}}</p>
         </div>
       </div>
       <div class="detail-closed">
