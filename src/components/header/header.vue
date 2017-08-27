@@ -33,6 +33,7 @@
       <div class="detail-wrapper clearfix">
         <div class="detail-main">
           <h1 class="name">{{seller.name}}</h1>
+          <star :size='48' :score="seller.score" class="star"></star>
         </div>
       </div>
       <div class="detail-closed">
@@ -43,6 +44,7 @@
 </template>
 
 <script >
+  import star from '../star/star.vue';
   export default {
     props: {
       seller: {
@@ -53,6 +55,9 @@
       return {
         detailShow: false
       };
+    },
+    components: {
+        star
     },
     methods: {
       showDetail: function () {
@@ -199,6 +204,9 @@
             font-size: 16px
             font-weight: 700
             color: rgb(255, 255, 255)
+            text-align: center
+          .star
+            margin-top: 16px
             text-align: center
       .detail-closed
          position: relative
