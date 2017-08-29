@@ -253,7 +253,7 @@
               flex: 1
               text-align: center
               padding: 0 12px
-              font-size: 14px   
+              font-size: 14px
           .supports
             width: 80%
             margin: 0 auto
@@ -283,15 +283,15 @@
                   bg-image('special_2')
               .text
                 line-height: 16px
-                font-size: 12px    
+                font-size: 12px
           .bulletin
-            width: 80% 
+            width: 80%
             margin: 0 auto
             .content
               line-height: 24px
               font-size: 12px
               font-weight: 200
-                    
+
       .detail-closed
          position: relative
          margin: -64px auto 0 auto
