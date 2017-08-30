@@ -221,8 +221,8 @@
       background: rgba(7, 17, 27, 0.8)
       &.fade-transition
         opacity: 1
-      &.fade-enter &.fade-leave
-        opacity: 0
+      &.fade-enter
+        opacity: 1
         background: rgba(7, 17, 27, 0)
       .detail-wrapper
         min-height: 100%
