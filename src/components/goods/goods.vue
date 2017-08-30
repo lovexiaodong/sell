@@ -21,7 +21,7 @@
               </div>
               <div class="content">
                 <h2 class="name">{{food.name}}</h2>
-                <p class="descip">{{food.description}}</p>
+                <p class="desc">{{food.description}}</p>
 
                 <div class="extra">
                   <span class="sellCount">月售{{food.sellCount}}份</span>
@@ -29,7 +29,7 @@
                 </div>
                 <div class="price">
                   <span class="price-symbol">￥</span>
-                  <span class="nowprice">{{food.price}}</span>
+                  <span class="nowPrice">{{food.price}}</span>
                   <span v-show="food.oldPrice" class="oldPrice">￥{{food.oldPrice}}</span>
                 </div>
               </div>
@@ -37,7 +37,7 @@
           </ul>
         </li>
       </ul>
-      
+
     </div>
   </div>
 </template>
@@ -61,7 +61,6 @@
         response = response.body;
         if (response.errno === RES_OK) {
             this.goods = response.data;
-            console.log(this.goods);
         }
       });
     }
@@ -140,27 +139,29 @@
               line-height: 14px
               font-size: 14px
               color: rgb(7, 17, 27)
-            .descip
-            .extra
+            .desc, .extra
               height: 10px
               line-height: 10px
-              color: rgb(147, 153, 159)  
-              margin-top: 8px
+              color: rgb(147, 153, 159)
+            .desc
+              margin-bottom: 8px
             .price
               font-size: 0
               font-weight: 700
-              line-height: 24px   
+              line-height: 24px
               margin-right: 8px
-              margin-top: 2px
+              margin-top: 8px
               .price-symbol
                 font-size: 10px
                 color: rgb(240,20,20)
-              .nowprice
+              .nowPrice
                 font-size: 14px
                 color: rgb(240,20,20)
               .oldPrice
+                margin-left: 8px
+                text-decoration: line-through
                 font-size: 10px
                 color: rgb(147, 153, 159)
                 font-weight: 700
-                line-height: 24px   
+                line-height: 24px
 </style>
